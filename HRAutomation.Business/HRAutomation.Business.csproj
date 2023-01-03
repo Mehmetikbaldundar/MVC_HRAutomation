@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+    <Folder Include="IoC\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HRAutomation.Core\HRAutomation.Core.csproj" />
+    <ProjectReference Include="..\HRAutomation.DataAccess\HRAutomation.DataAccess.csproj" />
+    <ProjectReference Include="..\HRAutomation.Entities\HRAutomation.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

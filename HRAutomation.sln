@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation.Presentation", "HRAutomation.Presentation\HRAutomation.Presentation.csproj", "{A259FACA-3FEA-461D-BEB2-B5389A5EE64D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation.Entities", "HRAutomation.Entities\HRAutomation.Entities.csproj", "{DA8FDD37-5973-48F2-9914-71440D17661D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation.DataAccess", "HRAutomation.DataAccess\HRAutomation.DataAccess.csproj", "{E3943730-D926-4257-B3D8-E4042BA7B5FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation.Core", "HRAutomation.Core\HRAutomation.Core.csproj", "{1C170B1A-8616-4518-B01E-9F32B3BA23DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAutomation.Business", "HRAutomation.Business\HRAutomation.Business.csproj", "{30026CB7-1AE4-4BAE-A0B5-151891320280}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A259FACA-3FEA-461D-BEB2-B5389A5EE64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A259FACA-3FEA-461D-BEB2-B5389A5EE64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A259FACA-3FEA-461D-BEB2-B5389A5EE64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A259FACA-3FEA-461D-BEB2-B5389A5EE64D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8FDD37-5973-48F2-9914-71440D17661D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8FDD37-5973-48F2-9914-71440D17661D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8FDD37-5973-48F2-9914-71440D17661D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8FDD37-5973-48F2-9914-71440D17661D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3943730-D926-4257-B3D8-E4042BA7B5FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3943730-D926-4257-B3D8-E4042BA7B5FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3943730-D926-4257-B3D8-E4042BA7B5FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3943730-D926-4257-B3D8-E4042BA7B5FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C170B1A-8616-4518-B01E-9F32B3BA23DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C170B1A-8616-4518-B01E-9F32B3BA23DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C170B1A-8616-4518-B01E-9F32B3BA23DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C170B1A-8616-4518-B01E-9F32B3BA23DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30026CB7-1AE4-4BAE-A0B5-151891320280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30026CB7-1AE4-4BAE-A0B5-151891320280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30026CB7-1AE4-4BAE-A0B5-151891320280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30026CB7-1AE4-4BAE-A0B5-151891320280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FFEB113-FAC7-4101-AF60-C1107E164285}
+	EndGlobalSection
+EndGlobal

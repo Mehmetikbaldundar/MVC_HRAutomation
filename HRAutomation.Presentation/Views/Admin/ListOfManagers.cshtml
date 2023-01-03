@@ -1,0 +1,52 @@
+﻿@model HRAutomation.Business.Models.VMs.ListOfManagersVM
+
+@{
+    ViewData["Title"] = "ListOfManagers";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>ListOfManagers</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Surname
+            </th>
+            <th>
+                EmailAddress
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Function
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Model.Name
+            </td>
+            <td>
+                @Model.Surname
+            </td>
+            <td>
+                @Model.EmailAddress
+            </td>
+            <td>
+                @Model.Salary
+            </td>
+        </tr>
+    </tbody>
+</table>
