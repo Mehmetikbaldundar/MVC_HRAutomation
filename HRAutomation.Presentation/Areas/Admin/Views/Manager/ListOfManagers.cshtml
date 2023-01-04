@@ -1,0 +1,56 @@
+﻿@model List<ListOfManagersVM>
+
+@{
+    ViewData["Title"] = "ListOfManagers";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>ListOfManagers</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Surname
+            </th>
+            <th>
+                EmailAddress
+            </th>
+            <th>
+                Salary
+            </th>
+            @*            <th>
+            Function
+            </th>*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Surname
+                </td>
+                <td>
+                    @item.EmailAddress
+                </td>
+                <td>
+                    @item.Salary
+                </td>
+                <td>
+                    <a class="btn btn-success" asp-area="Admin" asp-controller="Manager" asp-action="UpdateManager" asp-route-id="@item.Id">Update</a>
+                    @*<a class="btn btn-danger" asp-action="DeletedManager" asp-route-id="@item.Id">Delete</a>*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

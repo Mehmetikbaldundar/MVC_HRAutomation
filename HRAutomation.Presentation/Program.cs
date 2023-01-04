@@ -1,3 +1,6 @@
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
+using HRAutomation.Business.IoC;
 using HRAutomation.DataAccess.Abstract;
 using HRAutomation.DataAccess.EntityFramework.Concrete;
 using HRAutomation.DataAccess.EntityFramework.Context;
@@ -24,13 +27,16 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         SecurePolicy = CookieSecurePolicy.Always,
         HttpOnly = true,
     };
-    x.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+    x.ExpireTimeSpan = TimeSpan.FromMinutes(15);
     x.SlidingExpiration = true;
     x.Cookie.MaxAge = x.ExpireTimeSpan;
 });
 
-builder.Services.AddScoped<IAdminRepo, AdminRepo>();
-builder.Services.AddScoped<IEmployeeRepo, EmployeeRepo>();
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(builder =>
+{
+    builder.RegisterModule(new DependencyResolver());
+});
 
 var app = builder.Build();
 
@@ -50,6 +56,11 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapControllerRoute(
+  name: "areas",
+  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+);
 
 app.MapControllerRoute(
     name: "default",

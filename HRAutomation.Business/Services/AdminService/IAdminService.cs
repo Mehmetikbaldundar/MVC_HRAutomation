@@ -13,5 +13,8 @@ namespace HRAutomation.Business.Services.AdminService
         Task AddManager(AddManagerDTO addManagerDTO);
 
         Task<List<ListOfManagersVM>> ListOfManagers();
+
+        Task<UpdateManagerDTO> GetManager(Guid id);
+        Task UpdateManager(UpdateManagerDTO updateManagerDTO);
     }
 }

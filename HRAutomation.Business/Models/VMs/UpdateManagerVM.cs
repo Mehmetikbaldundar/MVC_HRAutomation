@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace HRAutomation.Business.Models.VMs
 {
-    public class ListOfManagersVM
+    public class UpdateManagerVM
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string EmailAddress { get; set; }
         public decimal? Salary { get; set; }
+        public string? IdentityNumber { get; set; }
+        public DateTime? UpdatedDate { get; set; } = DateTime.Now;
     }
 }

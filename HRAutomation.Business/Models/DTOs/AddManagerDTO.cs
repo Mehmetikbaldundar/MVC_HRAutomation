@@ -16,5 +16,6 @@ namespace HRAutomation.Business.Models.DTOs
         public Status Status { get; set; } = Status.Active;
         public decimal Salary { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public Roles Role { get; set; } = Roles.Manager;
     }
 }
