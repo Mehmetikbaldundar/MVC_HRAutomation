@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRAutomation.DataAccess.Migrations
 {
     [DbContext(typeof(HRAutomationDbContext))]
-    [Migration("20230104001110_mig_1")]
+    [Migration("20230126193508_mig_1")]
     partial class mig_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
